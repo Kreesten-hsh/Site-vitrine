@@ -1,0 +1,112 @@
+body{
+    background-color: beige;
+    position: relative;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+.navbar ul{
+    display: flex;
+    gap: 30px;
+}
+
+.navbar li {
+    list-style: none;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: #333;
+    font-size: 1.2rem;
+    transition: 0.3s;
+}
+
+.navbar a:hover{
+    color: #000;
+}
+
+.navbar h2 {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.section-hero{
+    background-color: rgb(252, 221, 225);
+    text-align: center;
+    padding: 30px;
+}
+
+.btn{
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 30px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.btn:hover{
+    transform: scale(1.05);
+}
+
+.section-about{
+    padding: 20px;
+}
+
+.section-contact{
+    padding: 20px;
+}
+
+
+.form-contact{
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    border: #888 1px solid;
+    gap: 10px;
+}
+
+
+.form-contact input{
+    padding: 10px;
+    width: 300px;
+    border-radius: 8px;
+    border: solid 1px #222;
+}
+
+.form-contact input:focus{
+    outline: none;
+}
+
+.form-contact input::placeholder{
+    margin-top: -5px;
+}
+
+.btn-contact{
+    background-color: pink;
+    padding: 10px 30px;
+    border-radius: 10px;
+    margin-top: 10px;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.btn-contact:hover{
+    transform: scale(1.05);
+}
+
+footer{
+    text-align: center;
+    padding: 10px;
+}
+
+
