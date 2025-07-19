@@ -1,13 +1,23 @@
 body{
     background-color: beige;
     position: relative;
+    overflow-x: hidden;
 }
-.navbar{
+.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: beige;
+    z-index: 1000;
+    max-width: 100%;
+    margin: 0 auto;
+    right: 0;
 }
+
 
 .navbar ul{
     display: flex;
@@ -35,9 +45,16 @@ body{
 }
 
 .section-hero{
+    position: relative;
+    margin-top: 100px;
     background-color: rgb(252, 221, 225);
     text-align: center;
-    padding: 30px;
+    padding: 30px 0;
+    width: 100vw;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
 }
 
 .btn{
@@ -77,7 +94,7 @@ body{
 
 .form-contact input{
     padding: 10px;
-    width: 300px;
+    width: 250px;
     border-radius: 8px;
     border: solid 1px #222;
 }
@@ -107,6 +124,12 @@ body{
 footer{
     text-align: center;
     padding: 10px;
+}
+
+@media (max-width: 768px) {
+    .navbar h2 {
+        font-size: 1rem;
+    }
 }
 
 
