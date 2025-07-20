@@ -11,8 +11,12 @@
 <body>
     <header>
         <nav class="navbar">
-            <h2>KREESTEN SHORT</h2>
-            <ul>
+            <a href="#"><h2>KREESTEN SHORTS</h2></a>
+            <div class="menu-toggle" id="menu-toggle">
+                <i class="fa-solid fa-bars" id="icon-bars"></i>
+                <i class="fa-solid fa-xmark" id="icon-close" style="display:none;"></i>
+            </div>
+            <ul id="navbar-menu">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Contact</a></li>
@@ -58,5 +62,21 @@
     <footer>
         <p>&copy; 2025 Kreesten Photography - Tous droits réeservés</p>
     </footer>
+<script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const navbarMenu = document.getElementById('navbar-menu');
+    const iconBars = document.getElementById('icon-bars');
+    const iconClose = document.getElementById('icon-close');
+    menuToggle.addEventListener('click', function() {
+        navbarMenu.classList.toggle('active');
+        if (navbarMenu.classList.contains('active')) {
+            iconBars.style.display = 'none';
+            iconClose.style.display = 'inline';
+        } else {
+            iconBars.style.display = 'inline';
+            iconClose.style.display = 'none';
+        }
+    });
+</script>
 </body>
 </html>
